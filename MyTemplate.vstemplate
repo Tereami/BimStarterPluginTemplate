@@ -1,0 +1,31 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>BimStarterRevitPlugin</Name>
+    <Description>Revit plugin template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BimStarterRevitPlugin</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="$safeprojectname$.csproj" ReplaceParameters="true">
+      <Folder Name="$safeprojectname$_data" TargetFolderName="$safeprojectname$_data">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Command.Russian.txt">Command.Russian.txt</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Command.txt">Command.txt</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Command_large.png">Command_large.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Command_small.png">Command_small.png</ProjectItem>
+		<ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.addin">$safeprojectname$.addin</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.cs">App.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Command.cs">Command.cs</ProjectItem>
+
+    </Project>
+  </TemplateContent>
+</VSTemplate>

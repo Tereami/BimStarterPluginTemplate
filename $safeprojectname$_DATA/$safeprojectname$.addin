@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">    
+    <Name>$safeprojectname$</Name>
+    <Assembly>
+      $safeprojectname$.dll
+    </Assembly>
+    <ClientId>$guid1$</ClientId>
+    <FullClassName>$safeprojectname$.App</FullClassName>
+    <VendorId>BIMSTARTER</VendorId>
+    <VendorDescription>https://bim-starter.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
